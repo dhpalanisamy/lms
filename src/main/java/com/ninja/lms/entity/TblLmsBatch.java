@@ -9,7 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -31,6 +32,7 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @EnableJpaRepositories
+@Table(name = "tbl_lms_batch")
 public class TblLmsBatch {
 	
 	@Id

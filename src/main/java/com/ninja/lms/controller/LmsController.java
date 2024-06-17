@@ -77,7 +77,7 @@ public class LmsController {
 			 }
 			 @GetMapping("/GetAllBatchesWithProgramId{id}")
 					 List<TblLmsBatch> findBatches(@PathVariable Integer id){
-				 return lmsBatchRepository.findAll();
+				 return lmsBatchRepository.findBatchByProgId(id);
 						 
 					 }
 }
